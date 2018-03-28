@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect": "^3.6.6",
+    "express": "^4.16.3",
+    "lodash": "^4.17.5",
+    "serve-static": "^1.13.2"
+  }
 }

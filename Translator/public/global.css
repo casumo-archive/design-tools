@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Circular-Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/lineto-circular-pro-book.eot');
+    src: url('fonts/lineto-circular-pro-book.eot') format('embedded-opentype'),
+    url('fonts/lineto-circular-pro-book.woff') format('woff'),
+    url('fonts/lineto-circular-pro-book.ttf') format('truetype'),
+    url('fonts/lineto-circular-pro-book.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Circular-Pro';
+    font-style: normal;
+    font-weight: 800;
+    src: url('fonts/lineto-circular-pro-black.eot');
+    src: url('fonts/lineto-circular-pro-black.eot') format('embedded-opentype'),
+    url('fonts/lineto-circular-pro-black.woff') format('woff'),
+    url('fonts/lineto-circular-pro-black.ttf') format('truetype'),
+    url('fonts/lineto-circular-pro-black.svg') format('svg');
+}
+
+*,
+html,
+body,
+font {
+    font-family: 'Circular-Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+li,ul
+{
+  list-style: none;
+  padding: 0;
+}
+.imageContainer
+{
+  float: left;
+  width: 30%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: url(images/bkg-transparent.png);
+  margin: 30px 10px 30px 30px;
+}
+.image
+{
+  width: 100%;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, .2);
+}
+.result
+{
+  float: left;
+  width: calc(70% - 60px);
+}
+.result li
+{
+  padding: 40px 130px 40px 30px;
+    margin: 30px;
+    box-sizing: border-box;
+    background: #EEF6F6;
+    color: #303838;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 6px;
+    display: table;
+}
+.result p
+{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.result li:first-child
+{
+  margin-top: 0;
+}
+.result input
+{
+  display: block;
+  opacity: 0;
+}
+.result span
+{
+  float: right;
+}
+.copy
+{
+  position: absolute;
+    right: 30px;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #19AC51;
+    padding: 0px 25px;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #19AC51;
+    font-weight: 800;
+}
+.flags li
+{
+  float: left;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.flags ul
+{
+  float: right;
+  margin-right: 30px;
+}
+.urlAtor
+{
+  float: right;
+  width: 40%;
+  margin-right: 20px;
+}
+.urlAtor input
+{
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #C9D6D6;
+  margin: 12px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
