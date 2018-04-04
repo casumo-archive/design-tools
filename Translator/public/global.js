@@ -5,6 +5,14 @@ $(document).ready(function()
     tempVal[0].select();
     document.execCommand("Copy");
   });
+  $(".flags li").click(function()
+  {
+      var tempClass = $(this).attr('class');
+      $( ".result").each(function( index ) {
+        $(this).removeClass("show");
+      });
+      $(".results ."+tempClass).addClass("show");
+  });
   $(".urlAtor input").keyup(function (e) {
     var key_code = e.keyCode;
     if ( key_code == 13) {
@@ -35,5 +43,13 @@ $(document).ready(function()
         $(".result").append( '<li><p>'+element["text"]+'</p><span class="copy">Copy</span><input type="text" value="'+element["text"]+'"/></li>');
       }
     });
+    $(".result").each(function()
+    {
+      if($(this).hasClass("row"))
+      {
+        $(this).children("p").html("Enter translation here...");
+        $(this).children("input").val("Enter translation here...");
+      }
+    })
   });
 });

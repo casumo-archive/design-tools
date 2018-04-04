@@ -52,6 +52,10 @@ li,ul
   float: left;
   width: calc(70% - 60px);
 }
+.results ul
+{
+  display: none;
+}
 .result li
 {
   padding: 40px 130px 40px 30px;
@@ -126,4 +130,8 @@ li,ul
   margin: 12px 0;
   width: 100%;
   box-sizing: border-box;
+}
+.show
+{
+  display: block!important;
 }
